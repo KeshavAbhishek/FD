@@ -65,7 +65,7 @@ ul li a:hover::after{
 /* Description related CSS */
 
 #siteDescription{
-    background: url(bg.jpg) no-repeat;
+    background-color:#000;
     font-size: 150%;
     padding: 4vh;
     font-weight: bold;

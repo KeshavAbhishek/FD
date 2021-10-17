@@ -1,0 +1,317 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+	background: linear-gradient(to right, #1a1b1c, #2a2b2c, #3a3b3c,#2a2b2c,#1a1b1c);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#logoImage{
+    width: 9%;
+    height: 9%;
+}
+
+nav{
+    display: inline-flex;
+    height: fit-content;
+    justify-content: right;
+}
+
+ul{
+    display: flex;
+    height: fit-content;
+}
+
+ul li{
+    list-style: none;
+    height: max-content;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7vw;
+    padding: 0 0.9vw;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 0.45vh;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+ul li a:hover::after{
+    width: 50%;
+}
+
+#menuController{
+    display: none;
+}
+
+/* Description related CSS */
+
+#siteDescription{
+    background: url(bg.jpg) no-repeat;
+    font-size: 150%;
+    padding: 4vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+#siteDescription:hover{
+    background: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+
+/* OUR SERVICES - CSS */
+
+#ourServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5vh 0;
+}
+
+#ourServicesTitle{
+    font-size: 290%;
+    font-weight: bolder;
+    margin-bottom: 3%;
+}
+
+#ourServicesDescription{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#ourServicesDescription img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#normalDelivery{
+    border: 2px solid red;
+    /* border-radius: 15px; */
+    padding: 10px;
+    margin: 0 0.45%;
+}
+#bulkDelivery{
+    border: 2px solid red;
+    /* border-radius: 15px; */
+    padding: 10px;
+    margin: 0 0.45%;
+}
+#homeDelivery{
+    border: 2px solid red;
+    /* border-radius: 15px; */
+    padding: 10px;
+    margin: 0 0.45%;
+}
+
+#normalDeliveryDescription{
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+#bulkDeliveryDescription{
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+#homeDeliveryDescription{
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.descFontStyle{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: green;
+    text-decoration: underline;
+}
+
+
+/* OUR CLIENTS - CSS */
+
+#ourClients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#ourClientsTitle{
+    font-size: 290%;
+    font-weight: bolder;
+}
+
+#ourClientLogoCollection{
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: url(clients.jpg);
+}
+
+.ourClientsLogoSizeController{
+    height: 25vh;
+    width: 25vh;
+    margin: 2.5vh 0;
+}
+
+/* CONTACT US - CSS */
+
+#contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5%;
+}
+
+#contactUsTitle{
+    font-size: 290%;
+    font-weight: bolder;
+}
+
+#contactUsForm{
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: url(contact.jpg) no-repeat center;
+    padding: 1%;
+}
+
+.inputsDecoration{
+    margin: 0.4%;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.inputsDecoration::placeholder{
+    color: black;
+}
+
+.inputsDecoration:hover{
+    background-color: white;
+    color: black;
+}
+
+#feebackEntry{
+    resize: none;
+}
+
+#submitButton{
+    font-size: 150%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 2vw;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    background: linear-gradient(to right,red,orange,yellow,orange,red);
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-weight: bolder;
+}
+
+/* FOOTER - CSS */
+
+#endPage{
+    width: 100%;
+    font-size: 150%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+/* MEDIA QUERY - FIRES */
+
+@media only screen and (max-width:700px){
+    #container{
+        flex-direction: column;
+    }
+
+    ul{
+        flex-direction: column;
+        text-align: center;
+        margin: 1.5vh 0;
+    }
+
+    ul li a{
+        font-size: 3vh;
+    }
+
+    ul li{
+        margin: 0.9vh 0;
+    }
+
+    #logoImage{
+        width: 30%;
+        height: 100%;
+    }
+    
+    #container{
+        height: 16vh;
+    }
+
+    #ourServicesDescription{
+        flex-direction: column;
+    }
+
+    #normalDelivery{
+        border: 2px solid red;
+        margin: 5px 5px;
+    }
+    #bulkDelivery{
+        border: 2px solid red;
+        margin: 5px 5px;
+    }
+    #homeDelivery{
+        border: 2px solid red;
+        margin: 5px 5px;
+    }
+
+    #menuController{
+        display: initial;
+        position: absolute;
+        width: 5%;
+        top: 7%;
+        cursor: pointer;
+        right: 1%;
+    }
+}

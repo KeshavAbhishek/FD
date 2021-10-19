@@ -69,3 +69,10 @@ function showhidemenu(){
         containerHeight='16vh';
     }
 }
+
+
+document.getElementById('siteDescription').addEventListener('mouseleave').style.color='white';
+
+document.getElementById('siteDescription').addEventListener('mouseleave').style.backgroundColor='white';
+
+document.getElementById('siteDescription').addEventListener('mouseleave').style.transition='all 0.8 ease-in-out';

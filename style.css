@@ -6,7 +6,6 @@
 
 #container{
 	background: linear-gradient(to right, #1a1b1c, #2a2b2c, #3a3b3c,#2a2b2c,#1a1b1c);
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,13 +71,13 @@ ul li a:hover::after{
     text-align: center;
 }
 
-#siteDescription:hover{
+/*#siteDescription:hover{
     background: none;
     background-color: black;
     color: white;
     cursor: pointer;
     transition: all 0.8s ease-in-out;
-}
+}*/
 
 /* OUR SERVICES - CSS */
 

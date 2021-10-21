@@ -70,9 +70,18 @@ function showhidemenu(){
     }
 }
 
+document.getElementById('siteDescription').addEventListener('mouseover',()=>{
+    document.getElementById('siteDescription').style.background = 'none';
+    document.getElementById('siteDescription').style.backgroundColor= '#000';
+    document.getElementById('siteDescription').style.color = '#fff';
+    document.getElementById('siteDescription').style.cursor = 'pointer';
+    document.getElementById('siteDescription').style.transition = 'all 0.8s ease-in-out';
+});
 
-document.getElementById('siteDescription').addEventListener('mouseleave').style.color='white';
-
-document.getElementById('siteDescription').addEventListener('mouseleave').style.backgroundColor='white';
-
-document.getElementById('siteDescription').addEventListener('mouseleave').style.transition='all 0.8 ease-in-out';
+document.getElementById('siteDescription').addEventListener('mouseleave',()=>{
+    document.getElementById('siteDescription').style.background = 'none';
+    document.getElementById('siteDescription').style.backgroundColor= '#fff';
+    document.getElementById('siteDescription').style.color = '#000';
+    document.getElementById('siteDescription').style.cursor = 'pointer';
+    document.getElementById('siteDescription').style.transition = 'all 0.8s ease-in-out';
+});

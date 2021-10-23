@@ -99,12 +99,12 @@ function animator(){
         document.getElementById('siteDescription').innerText = currentTextContent_;
     }
     else{
-        return
-    }
-}
+        return;
+    };
+};
 
 function startAnimator(){
     setInterval(animator, 10);
-}
+};
 
 setTimeout(startAnimator, 2500);

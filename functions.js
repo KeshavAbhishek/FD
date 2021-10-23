@@ -103,8 +103,4 @@ function animator(){
     };
 };
 
-function startAnimator(){
-    setInterval(animator, 10);
-};
-
-setTimeout(startAnimator, 2500);
+setInterval(animator, 10);

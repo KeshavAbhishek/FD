@@ -130,20 +130,14 @@ ul li a:hover::after{
 #normalDeliveryDescription{
     text-align: center;
     font-size: 150%;
-    /*font-weight: bold;*/
-    font-family: 'Agency FB';
 }
 #bulkDeliveryDescription{
     text-align: center;
     font-size: 150%;
-    /*font-weight: bold;*/
-    font-family: 'Agency FB';
 }
 #homeDeliveryDescription{
     text-align: center;
     font-size: 150%;
-    /*font-weight: bold;*/
-    font-family: 'Agency FB';
 }
 
 .descFontStyle{

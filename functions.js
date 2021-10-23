@@ -71,8 +71,8 @@ function showhidemenu(){
 }
 
 document.getElementById('siteDescription').addEventListener('mouseover',()=>{
-    document.getElementById('siteDescription').style.background = 'none';
-    document.getElementById('siteDescription').style.backgroundColor= '#000';
+    document.getElementById('siteDescription').style.background = 'linear-gradient(to right, #1a1b1c, #2a2b2c, #3a3b3c, #2a2b2c, #1a1b1c)';
+    // document.getElementById('siteDescription').style.backgroundColor= '#000';
     document.getElementById('siteDescription').style.color = '#fff';
     document.getElementById('siteDescription').style.cursor = 'pointer';
     document.getElementById('siteDescription').style.transition = 'all 0.5s ease-in-out';
@@ -85,3 +85,26 @@ document.getElementById('siteDescription').addEventListener('mouseleave',()=>{
     document.getElementById('siteDescription').style.cursor = 'pointer';
     document.getElementById('siteDescription').style.transition = 'all 0.5s ease-in-out';
 });
+
+// Some crazy animation
+
+var descText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores autem nulla consequuntur dolorem alias aperiam ea impedit, illo tempora nobis facilis, laudantium repellat numquam minima quibusdam minus libero cupiditate quas labore? Iste odit quibusdam sequi consectetur inventore, repudiandae laudantium voluptas! Ratione excepturi pariatur voluptates ipsum? Cumque quam nostrum animi!';
+var currentTextContent_ = '';
+var i = 0;
+
+function animator(){
+    if(i < descText.length){
+        currentTextContent_ += descText[i];
+        i += 1;
+        document.getElementById('siteDescription').innerText = currentTextContent_;
+    }
+    else{
+        return
+    }
+}
+
+function startAnimator(){
+    setInterval(animator, 10);
+}
+
+setTimeout(startAnimator, 2500);
